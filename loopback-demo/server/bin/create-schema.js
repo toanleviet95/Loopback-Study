@@ -21,12 +21,15 @@ if (args[0] === '--type' && args[1] === 'mysql' && args[2] === '--ds' && args[3]
                     }
                     result['base'] = 'PersistedModel';
                     result['plural'] = table;
+                    result['validations'] = [];
+                    result['relations'] = {};
+                    result['acls'] = [];
+                    result['methods'] = {};
                     fs.writeFile('./common/models/' + table + '.json', JSON.stringify(result), (err) => {
                         if (err) {
                             throw err;
                         }
                         console.log('"' + table + '"' + ' was created !!!');
-                        process.exit();
                     });
                 });
             },

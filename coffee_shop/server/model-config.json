@@ -1,0 +1,48 @@
+{
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/server/models",
+            "../common/models",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "../common/mixins",
+            "./mixins"
+        ]
+    },
+    "User": {
+        "dataSource": "coffee_shop_mysql",
+        "public": true
+    },
+    "AccessToken": {
+        "dataSource": "coffee_shop_mysql",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "coffee_shop_mysql",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "coffee_shop_mysql",
+        "public": false
+    },
+    "Role": {
+        "dataSource": "coffee_shop_mysql",
+        "public": false
+    },
+    "Review": {
+        "dataSource": "coffee_shop",
+        "public": true
+    },
+    "Reviewer": {
+        "dataSource": "coffee_shop",
+        "public": true
+    },
+    "CoffeeShop": {
+        "dataSource": "coffee_shop_mysql",
+        "public": true
+    }
+}

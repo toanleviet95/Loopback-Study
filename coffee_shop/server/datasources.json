@@ -1,0 +1,22 @@
+{
+    "coffee_shop": {
+        "host": "localhost",
+        "port": 27017,
+        "url": "",
+        "database": "coffee_shop",
+        "password": "",
+        "name": "coffee_shop",
+        "user": "",
+        "connector": "mongodb"
+    },
+    "coffee_shop_mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "url": "",
+        "database": "coffee_shop",
+        "password": "",
+        "name": "coffee_shop_mysql",
+        "user": "root",
+        "connector": "mysql"
+    }
+}
