@@ -1,0 +1,23 @@
+{
+    "account": {
+        "connector": "mongodb",
+        "host": "localhost",
+        "port": 27017,
+        "database": "account",
+        "username": "",
+        "password": ""
+    },
+    "accountMySQL": {
+        "connector": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "database": "account",
+        "password": "",
+        "user": "root"
+    },
+    "todo": {
+        "name": "todo",
+        "connector": "memory",
+        "file": "./data/db.json"
+    }
+}
